@@ -127,7 +127,7 @@ filtered_links=[]
 **catergory_links :** Extracting the urls using the div class with name ""desktop-categoryLink  <br>
 
 ## **Cloth_Categorizer.py**<br>
-A fucntion to categorize the products as T-Shirt,Shirt etc etc for bth men and women.<br>
+A fucntion to categorize the products as T-Shirt,Shirt etc etc for both men and women.<br>
 
 ## **requirements.txt**<br>
 This file conatins all the modules that are need:
