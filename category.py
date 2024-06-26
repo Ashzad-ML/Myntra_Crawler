@@ -17,17 +17,13 @@ def category_link(url):
     options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    # url="https://www.myntra.com/"
     driver.get(url)
     time.sleep(3)
     href_store= []
     catergory_links=driver.find_elements(By.CLASS_NAME, 'desktop-categoryLink')
     for link in catergory_links:
         href=link.get_attribute('href')
-        # print(href)
         href_store.append(href)
-
-    # print(href_store)
 
     driver.quit()
     return href_store
@@ -37,23 +33,14 @@ if __name__ == "__main__":
     
     url="https://www.myntra.com/"
     links = category_link(url)
-    # print(links)
-    # links.index("https://www.myntra.com/women-accessories")
-    # links.index("https://www.myntra.com/women-watches")
-
-    # print (links[0])
-    # idw.image_downlaod(links[0])
-    # prod_link=ipl.each_link(links[0])
-    # for i in range (4):
-    #     idw.image_downl0oad(prod_link[i])
     
-    # for i in range(18):
-    #     eachlink=[]
-    #     eachlink = product_links.each_link(links[i])
-    #     for j in range(10):
-    #         download_each_image.men_image_download(eachlink[j])
+    for i in range(18):
+        eachlink=[]
+        eachlink = product_links.each_link(links[i])
+        for j in range(10):
+            download_each_image.men_image_download(eachlink[j])
     
-    # categorizer.men_categorize_images()
+    categorizer.men_categorize_images()
 
     for i in range(76,77):
         eachlink=[]
