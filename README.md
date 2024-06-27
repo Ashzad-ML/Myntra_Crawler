@@ -6,6 +6,7 @@ With a focus on extracting high-quality product images, the crawler navigates th
 The Myntra Product Image Crawler endeavors to contribute to the advancement of image recognition technology within the realm of fashion and e-commerce, ultimately fostering the development of more efficient and intuitive product recommendation systems, trend analysis tools, and personalized shopping experiences. Through its meticulous extraction and compilation of product images, the crawler lays the foundation for empowering future machine learning endeavors in the domain of fashion and e-commerce, setting the stage for groundbreaking advancements in image-based product classification and analysis.
 
 ### File Structure
+```
 Myntra_Crawler/
   │
   ├── Image_Download.py
@@ -14,6 +15,7 @@ Myntra_Crawler/
   ├── Cloth_Categorizer.py
   ├── pycacle file
   └── requirements.txt
+```
 
 ## **Image_Download.py**<br>
 For the project my first Approach was that I should be able to download the product images using the link and also I should be able to store them in my local system. So for achieving this I created a python script.
